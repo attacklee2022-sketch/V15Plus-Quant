@@ -8,7 +8,21 @@
 
 ## 界面预览
 
-![板块热力图 · V15Plus GUI](docs/images/sector_heatmap.png)
+**信号看板** —— 扫描股票池，按 V15 评分输出可操作信号（等级 / 场景 / 板块动力 / 进场建议）：
+
+![信号看板](docs/images/signal_board.png)
+
+**择时雷达** —— 单只个股的四因子 / 场景 / 过滤全链路拆解：
+
+![择时雷达](docs/images/timing_radar.png)
+
+**盘前雷达** —— 隔夜外围市场与板块映射：
+
+![盘前雷达](docs/images/premarket_radar.png)
+
+**板块热力图** —— 行业板块涨跌与资金分布：
+
+![板块热力图](docs/images/sector_heatmap.png)
 
 ## 特性
 
