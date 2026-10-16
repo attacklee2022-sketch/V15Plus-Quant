@@ -1,0 +1,61 @@
+# ══════════════════════════════════════════════
+# V15Plus 量化选股系统 — Git 忽略规则
+# ══════════════════════════════════════════════
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# 密钥与本地隐私配置（切勿提交！）
+.env
+*_key*.txt
+deepseek_key*.txt
+*.pem
+*.key
+
+# 数据与运行时产物
+data/*.db
+data/*.db-journal
+data/cloud_outbox/
+data/auto_trader_logs/
+data/.auto_trader_last_run
+data/v15_cache_*.json
+data/fin_*.json
+data/ai_report_*.md
+data/*test*.txt
+
+# 缓存
+_market_*.json
+_internal/sector_cache.json
+sector_power_history.jsonl
+
+# 日志
+*.log
+error_log.txt
+power_debug.txt
+
+# 打包产物与备份
+*.exe
+*.zip
+*.bak
+*.bak[0-9]
+*_backup*
+
+# 输出文件
+批量扫描_*.xlsx
+factor_ic_report.txt
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 保留的脱敏示例
+!data/auto_account.json
+!data/stock_names.json

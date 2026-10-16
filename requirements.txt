@@ -1,0 +1,24 @@
+# V15Plus 依赖（Python 3.11+）
+# GUI 使用标准库 tkinter，无需额外安装
+
+# 数据与计算
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+mplfinance>=0.12
+
+# 行情数据抓取
+akshare>=1.12
+mootdx>=0.11          # 通达信本地数据读取
+requests>=2.31
+beautifulsoup4>=4.12
+
+# AI 分析（DeepSeek 走 OpenAI 兼容接口）
+openai>=1.0
+
+# 网络与远程
+paramiko>=3.4         # SSH 上传
+pypinyin>=0.51
+
+# 报告
+reportlab>=4.0        # PDF 报告

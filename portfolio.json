@@ -1,0 +1,72 @@
+{
+  "positions": [
+    {
+      "id": "600519_2026-01-05_0",
+      "code": "600519",
+      "name": "贵州茅台",
+      "buy_price": 1500.0,
+      "shares": 100,
+      "buy_date": "2026-01-05",
+      "stop_loss_pct": 7.0,
+      "take_profit_pct": 15.0,
+      "notes": "示例数据（demo）",
+      "status": "持有",
+      "close_date": "",
+      "close_price": 0.0,
+      "pnl": 0.0,
+      "pnl_pct": 0.0,
+      "added_at": "2026-01-05 09:30",
+      "current_price": 1520.0,
+      "current_pnl_pct": 1.33
+    },
+    {
+      "id": "000858_2025-12-10_1",
+      "code": "000858",
+      "name": "五粮液",
+      "buy_price": 150.0,
+      "shares": 200,
+      "buy_date": "2025-12-10",
+      "stop_loss_pct": 7.0,
+      "take_profit_pct": 15.0,
+      "notes": "示例数据（demo）",
+      "status": "已平仓",
+      "close_date": "2026-01-08",
+      "close_price": 162.0,
+      "pnl": 2400.0,
+      "pnl_pct": 8.0,
+      "added_at": "2025-12-10 09:30",
+      "current_price": 162.0,
+      "current_pnl_pct": 8.0
+    }
+  ],
+  "history": [
+    {
+      "id": "000858_2025-12-10_1",
+      "code": "000858",
+      "name": "五粮液",
+      "buy_date": "2025-12-10",
+      "close_date": "2026-01-08",
+      "buy_price": 150.0,
+      "close_price": 162.0,
+      "shares": 200,
+      "pnl": 2400.0,
+      "pnl_pct": 8.0,
+      "hold_days": 29
+    }
+  ],
+  "stats": {
+    "updated_at": "2026-01-08 15:00",
+    "active_count": 1,
+    "total_cost": 150000.0,
+    "total_market": 152000.0,
+    "total_pnl": 2000.0,
+    "total_pnl_pct": 1.33,
+    "closed_count": 1,
+    "win_count": 1,
+    "win_rate": 100.0,
+    "total_hist_pnl": 2400.0,
+    "avg_win": 2400.0,
+    "avg_loss": 0.0,
+    "profit_factor": 0.0
+  }
+}
