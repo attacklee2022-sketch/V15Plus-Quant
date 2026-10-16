@@ -51,7 +51,7 @@ for code in mapped_tdx:
 print(f'精简后板块数: {len(hy_codes)}（仅东方财富映射到的板块）')
 
 # ── 读日线 ──
-TDX_BASE = r'D:\通达信\vipdoc\sh\lday'
+TDX_BASE = os.path.join(os.environ.get("TDX_ROOT_PATH", r"D:\通达信"), 'vipdoc', 'sh', 'lday')
 daily_totals = defaultdict(float)
 sector_daily = defaultdict(dict)
 LOOKBACK = 240

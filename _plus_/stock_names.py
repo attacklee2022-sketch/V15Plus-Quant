@@ -67,7 +67,7 @@ def build_name_cache(force=False):
                 pass
 
         # ── 枚举全 A 股代码 ──
-        TDX_BASE = r"D:\通达信\vipdoc"
+        TDX_BASE = os.path.join(os.environ.get("TDX_ROOT_PATH", r"D:\通达信"), "vipdoc")
         all_codes = []
         for market, prefix in [("sh", "60"), ("sh", "68"), ("sz", "00"), ("sz", "30")]:
             lday_dir = os.path.join(TDX_BASE, market, "lday")

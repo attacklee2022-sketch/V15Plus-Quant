@@ -35,7 +35,7 @@ from v15_filter import compute_filtered_signal
 
 # ── 配置 ──
 APP_DIR = os.path.dirname(_SCRIPT_DIR)
-TDX_ROOT = r"D:\通达信"
+TDX_ROOT = os.environ.get("TDX_ROOT_PATH", r"D:\通达信")
 SELF_STOCK_FILE = os.path.join(APP_DIR, "self_stock.txt")
 BACKTEST_YEARS = 3  # 只用最近3年数据
 FORWARD_DAYS = [5, 10, 20, 60]  # 多周期验证

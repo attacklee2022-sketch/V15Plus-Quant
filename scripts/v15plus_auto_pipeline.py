@@ -37,7 +37,7 @@ for p in [_INTERNAL, _PLUS_DIR, _APP_DIR]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-TDX_ROOT = r"D:\通达信"
+TDX_ROOT = os.environ.get("TDX_ROOT_PATH", r"D:\通达信")
 
 
 # ═══════════════════════════════════════════════════════════

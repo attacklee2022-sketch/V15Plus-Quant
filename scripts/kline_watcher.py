@@ -23,7 +23,7 @@ for p in [_APP_DIR]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-TDX_ROOT = r"D:\通达信"
+TDX_ROOT = os.environ.get("TDX_ROOT_PATH", r"D:\通达信")
 DEFAULT_CLOUD_URL = os.environ.get("CLOUD_URL", "http://your-server.example.com/research")
 CHECK_INTERVAL = 900  # 15 分钟
 CHECK_START = "15:30"  # 15:30 开始检查

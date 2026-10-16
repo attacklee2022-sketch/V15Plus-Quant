@@ -6,10 +6,10 @@ import struct
 from datetime import datetime
 import pandas as pd
 
-TDX_ROOTS = [r"D:\通达信", r"D:\tdx", r"C:\通达信", r"C:\tdx"]
+TDX_ROOTS = [os.environ.get("TDX_ROOT_PATH", ""), r"D:\通达信", r"D:\tdx", r"C:\通达信", r"C:\tdx"]
 TDX_ROOT = None
 for r in TDX_ROOTS:
-    if os.path.exists(r):
+    if r and os.path.exists(r):
         TDX_ROOT = r
         break
 

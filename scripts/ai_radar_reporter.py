@@ -10,7 +10,7 @@ import struct
 from datetime import datetime
 
 DEEPSEEK_KEY = os.getenv("DEEPSEEK_KEY", "")
-TDX_ROOT = r"D:\通达信"
+TDX_ROOT = os.environ.get("TDX_ROOT_PATH", r"D:\通达信")
 
 # ── 辅助：读取通达信数据算技术指标 ──
 

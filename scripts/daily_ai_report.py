@@ -35,7 +35,7 @@ from v15_scenario_engine import compute_scenario_signal
 from v15_filter import compute_filtered_signal
 
 # ── 配置 ──
-TDX_ROOT = r"D:\通达信"
+TDX_ROOT = os.environ.get("TDX_ROOT_PATH", r"D:\通达信")
 SELF_STOCK_FILE = os.path.join(_APP_DIR, "self_stock.txt")
 REPORT_DIR = os.path.join(_APP_DIR, "data")
 os.makedirs(REPORT_DIR, exist_ok=True)

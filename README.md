@@ -48,6 +48,19 @@ pip install -r requirements.txt
 
 ## 快速开始
 
+### 第一步：准备行情数据（必做）
+
+V15Plus 的日线数据来自**本机通达信本地文件**，不是联网抓取。请先安装通达信、下载盘后数据，
+再把环境变量 `TDX_ROOT_PATH` 指向通达信目录：
+
+```bash
+setx TDX_ROOT_PATH "D:\通达信"      # Windows，换成你的实际路径
+```
+
+> 跳过这步会读不到任何行情。完整说明见 **[docs/DATASOURCE.md](docs/DATASOURCE.md)**。
+
+### 第二步：启动
+
 ```bash
 python start.py
 ```
@@ -65,10 +78,10 @@ python start.py
 
 ## 配置
 
-核心评分与 GUI **开箱即用**，无需任何配置即可运行选股与回测。
+**必需**：数据源 `TDX_ROOT_PATH`（见上一步，详见 [docs/DATASOURCE.md](docs/DATASOURCE.md)）。
 
-需要 **AI 分析**、**云端同步/推送** 等功能时，通过环境变量配置（详见
-[docs/CONFIGURATION.md](docs/CONFIGURATION.md)）：
+其余均为可选——**AI 分析**、**云端同步/推送** 等功能通过环境变量配置
+（详见 [docs/CONFIGURATION.md](docs/CONFIGURATION.md)）：
 
 ```bash
 cp .env.example .env
@@ -129,6 +142,7 @@ V15Plus-Quant/
 
 ## 文档
 
+- **[数据源配置](docs/DATASOURCE.md)** — 通达信路径等数据源从 0 配置（**新手必读**）
 - [配置指引](docs/CONFIGURATION.md) — 环境变量与密钥怎么配
 - [部署指引](docs/DEPLOYMENT.md) — 云端采集 / 上传 / 推送架构怎么搭
 - [架构说明](docs/ARCHITECTURE.md) — 评分管道与模块职责
@@ -136,9 +150,9 @@ V15Plus-Quant/
 ## 免责声明
 
 本项目是个人量化学习项目，所有策略、评分、信号仅供研究与技术交流，**不构成投资建议**，
-不保证任何收益。使用者需自行承担全部风险。项目中的行情数据来自第三方公开接口，
-其准确性、及时性与可用性由数据源决定，作者不做任何担保。
+不保证任何收益。使用者需自行承担全部风险。项目中的行情数据来自通达信本地文件及第三方
+公开接口，其准确性、及时性与可用性由数据源决定，作者不做任何担保。
 
 ## License
 
-[MIT](LICENSE)
+[GPL-3.0](LICENSE) — 可自由使用与修改，但衍生作品须同样以 GPL-3.0 开源。

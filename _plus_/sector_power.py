@@ -34,7 +34,7 @@ _cache_date: str = ""  # 缓存日期，跨日自动清空
 # 扫描级预计算：17个板块各算一次
 _all_sector_powers: dict[str, dict] = {}
 
-TDX_BASE = r"D:\通达信\vipdoc\sh\lday"
+TDX_BASE = os.path.join(os.environ.get("TDX_ROOT_PATH", r"D:\通达信"), "vipdoc", "sh", "lday")
 
 # ══════════════════════════════════════════════════════
 # 0. T1 评分：板块资金占全市场比重 z-score
